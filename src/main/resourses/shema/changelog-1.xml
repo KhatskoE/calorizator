@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+  <changeSet author="elena" id="create main tables">
+    <createTable tableName="vegetables">
+      <column name="id" type="INT" autoIncrement="true"/>
+      <column name="name" type="VARCHAR(255)"/>
+      <column name="clories" type="real"/>
+      <column name="fat" type="real"/>
+      <column name="protein" type="real"/>
+      <column name="carbohydrate" type="real"/>
+    </createTable>
+    <createTable tableName="fruits">
+      <column name="id" type="INT" autoIncrement="true"/>
+      <column name="name" type="VARCHAR(255)"/>
+      <column name="clories" type="real"/>
+      <column name="fat" type="real"/>
+      <column name="protein" type="real"/>
+      <column name="carbohydrate" type="real"/>
+    </createTable>
+    <createTable tableName="cereals">
+      <column name="id" type="INT" autoIncrement="true"/>
+      <column name="name" type="VARCHAR(255)"/>
+      <column name="clories" type="real"/>
+      <column name="fat" type="real"/>
+      <column name="protein" type="real"/>
+      <column name="carbohydrate" type="real"/>
+    </createTable>
+  </changeSet>
+  <changeSet author="elena" id="inserts into the vegetables">
+      <insert tableName="vegetables">
+        <column name="name" value="морковь"/>
+        <column name="clories" value="37"/>
+        <column name="protein" value="1.3"/>
+        <column name="fat" value="0.1"/>
+        <column name="carbohydrate" value="7.2"/>
+      </insert>
+      <insert tableName="vegetables">
+        <column name="name" value="лук репчатый"/>
+        <column name="clories" value="41"/>
+        <column name="protein" value="1.4"/>
+        <column name="fat" value="0.0"/>
+        <column name="carbohydrate" value="9.1"/>
+      </insert>
+      <insert tableName="vegetables">
+        <column name="name" value="кабачки"/>
+        <column name="clories" value="23"/>
+        <column name="protein" value="0.6"/>
+        <column name="fat" value="0.3"/>
+        <column name="carbohydrate" value="4.9"/>
+      </insert>
+  </changeSet>
+</databaseChangeLog>
