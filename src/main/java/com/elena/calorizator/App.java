@@ -1,8 +1,9 @@
-package test.calorizator;
+package com.elena.calorizator;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 
 
 @SpringBootApplication

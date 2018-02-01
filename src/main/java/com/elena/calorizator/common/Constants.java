@@ -1,4 +1,4 @@
-package test.calorizator.common;
+package com.elena.calorizator.common;
 
 public final class Constants {
 

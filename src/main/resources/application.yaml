@@ -1,0 +1,16 @@
+spring:
+    profiles:
+        active: @build.profile.id@
+    application:
+         name: calorizator
+
+---
+spring:
+    profiles: dev
+    datasource:
+            jdbcUrl: jdbc:postgresql://localhost:5432/calorizator
+            username: postgres
+            password: postgres
+            driver-class-name: org.postgresql.Driver
+liquibase:
+    change-log: classpath:schema/changelog-master.xml

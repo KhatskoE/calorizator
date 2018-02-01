@@ -9,4 +9,4 @@ services:
     environment:
       - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_PASSWORD=postgres
-      - POSTGRESQL_DATABASE=testdb
+      - POSTGRESQL_DATABASE=calorizator

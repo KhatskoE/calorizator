@@ -1,4 +1,4 @@
-package test.calorizator.dto;
+package com.elena.calorizator.dto;
 
 import lombok.Data;
 
