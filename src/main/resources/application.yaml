@@ -4,7 +4,10 @@ spring:
     application:
          name: calorizator
 
+liquibase:
+    change-log: classpath:schema/changelog-master.xml
 ---
+
 spring:
     profiles: dev
     datasource:
@@ -12,5 +15,4 @@ spring:
             username: postgres
             password: postgres
             driver-class-name: org.postgresql.Driver
-liquibase:
-    change-log: classpath:schema/changelog-master.xml
+
